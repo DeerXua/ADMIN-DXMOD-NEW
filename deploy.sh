@@ -9,14 +9,14 @@
 
 set -e
 
-VPS_DIR="/opt/core-payload-server"
+VPS_DIR="/root/dx-vps-server/dx-vps-server"
 REPO="https://github.com/DeerXua/ADMIN-DXMOD-NEW.git"
-SERVICE="core-payload-server"
+SERVICE="dx-vps-server"
 PORT_NUMBER=5003
 
 echo ""
 echo "╔═══════════════════════════════════════════╗"
-echo "║      CORE PAYLOAD SERVER VPS Deploy       ║"
+echo "║          DX-VPS-SERVER VPS Deploy         ║"
 echo "╚═══════════════════════════════════════════╝"
 echo ""
 echo "⚠️  Cài đặt vào: $VPS_DIR"

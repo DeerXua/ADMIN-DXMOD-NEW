@@ -1,5 +1,5 @@
 # =============================================================
-#  CORE-PAYLOAD-SERVER VPS Deploy via SSH
+#  DX-VPS-SERVER VPS Deploy via SSH
 #  Chạy script PowerShell này sau khi bật terminal SSH
 # =============================================================
 #
@@ -9,12 +9,12 @@
 #  3. Sau khi vào VPS, paste lệnh bên dưới:
 
 $DEPLOY_CMD = @"
-# ---- CORE-PAYLOAD-SERVER One-Line Deploy ----
+# ---- DX-VPS-SERVER One-Line Deploy ----
 curl -fsSL https://raw.githubusercontent.com/DeerXua/ADMIN-DXMOD-NEW/main/deploy.sh -o /tmp/deploy_payload.sh && chmod +x /tmp/deploy_payload.sh && bash /tmp/deploy_payload.sh
 "@
 
 Write-Host "==================================================" -ForegroundColor Cyan
-Write-Host "  CORE-PAYLOAD-SERVER VPS Deploy Instructions" -ForegroundColor Cyan
+Write-Host "  DX-VPS-SERVER VPS Deploy Instructions" -ForegroundColor Cyan
 Write-Host "==================================================" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Bước 1: SSH vào VPS" -ForegroundColor Yellow
