@@ -4,7 +4,7 @@
 #  - Chỉ cài vào /opt/core-payload-server (thư mục riêng biệt)
 #  - KHÔNG đụng tới bất kỳ project/process nào đang chạy
 #  - KHÔNG dùng pm2 delete/stop/kill trên process khác
-#  - Chạy CORE-PAYLOAD-SERVER trên port 5002
+#  - Chạy CORE-PAYLOAD-SERVER trên port 5003
 # =============================================================
 
 set -e
@@ -12,7 +12,7 @@ set -e
 VPS_DIR="/opt/core-payload-server"
 REPO="https://github.com/DeerXua/ADMIN-DXMOD-ANTI-CRACK.git"
 SERVICE="core-payload-server"
-PORT_NUMBER=5002
+PORT_NUMBER=5003
 
 echo ""
 echo "╔═══════════════════════════════════════════╗"
@@ -75,8 +75,8 @@ echo ""
 echo "╔══════════════════════════════════════════════════════╗"
 echo "║                  DEPLOY COMPLETE!                    ║"
 echo "╠══════════════════════════════════════════════════════╣"
-echo "║  URL Endpoint:  POST http://160.250.246.119:5002/api/payload ║"
-echo "║  Health check:  GET  http://160.250.246.119:5002/health      ║"
+echo "║  URL Endpoint:  POST http://160.250.246.119:5003/api/payload ║"
+echo "║  Health check:  GET  http://160.250.246.119:5003/health      ║"
 echo "╠══════════════════════════════════════════════════════╣"
 echo "║  Xem log:       pm2 logs $SERVICE                    ║"
 echo "║  Trạng thái:    pm2 status                           ║"

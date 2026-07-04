@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PORT = 5003;
+const PORT = process.env.PORT || 5003;
 const XOR_KEY = "DX_SECRET_PAYLOAD_KEY_2026!@#";
 const DB_PATH = path.join(__dirname, "data.json");
 const SESSIONS_PATH = path.join(__dirname, "sessions.json");
@@ -22,6 +22,12 @@ let lastPayloadMtime = 0;
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use((err, req, res, next) => {
+  if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
+    return res.status(400).json({ error: "Invalid JSON" });
+  }
+  next();
+});
 app.use(express.urlencoded({ extended: true }));
 
 // Serve Web Admin UI Static Files

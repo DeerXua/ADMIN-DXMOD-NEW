@@ -27,11 +27,11 @@ Write-Host "Lệnh này sẽ tự động:" -ForegroundColor Yellow
 Write-Host "  ✅ Cài Node.js + PM2 (nếu chưa có)"
 Write-Host "  ✅ Clone/pull code từ GitHub repo mới"
 Write-Host "  ✅ npm install"
-Write-Host "  ✅ Chạy server bảo mật với PM2 trên port 5002"
+Write-Host "  ✅ Chạy server bảo mật với PM2 trên port 5003"
 Write-Host ""
 Write-Host "Kết quả:" -ForegroundColor Yellow
-Write-Host "  🌐 http://160.250.246.119:5002/health  (Health Check)"
-Write-Host "  🔗 http://160.250.246.119:5002/api/payload  (Endpoint lấy code)"
+Write-Host "  🌐 http://160.250.246.119:5003/health  (Health Check)"
+Write-Host "  🔗 http://160.250.246.119:5003/api/payload  (Endpoint lấy code)"
 Write-Host ""
 
 # Tự động copy lệnh vào clipboard
